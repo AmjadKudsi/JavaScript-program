@@ -1,0 +1,59 @@
+<html>
+
+    <head>
+        <h2> Data Types: </h2>
+    </head>
+
+    <body>
+
+        <script>
+
+            document.write("1) String: The string data type is used to represent textual data (i.e. sequences of characters). Strings are created using single or double quotes surrounding one or more characters. <br><br>eg: ");
+
+            var a = 'Hi there!';
+            document.write(a);
+
+            document.write("<br><br>2) Number: The number data type is used to represent positive or negative numbers with or without decimal place, or numbers written using exponential notation. <br><br>eg: ")
+
+            var a = 25;  
+            document.write(a);
+
+            document.write("<br><br>3) Boolean: The Boolean data type can hold only two values: true or false. <br><br>eg: ")
+
+            var a = true;   
+            document.write(a);
+
+            document.write("<br><br>4) Undefined: If a variable has been declared, but has not been assigned a value, has the value undefined. <br><br>eg: ")
+
+            var b;  
+            document.write(b);
+
+            document.write("<br><br>5) Null: A null value means that there is no value. It is not equivalent to an empty string or 0, it is simply nothing. <br><br>eg: ")
+
+            var a = null;  
+            document.write(a);
+
+            document.write("<br><br>6) Object: The object is a complex data type that allows you to store collections of data. <br><br>eg: ")
+
+            var person = {"name": "Clark", "surname": "Kent", "age": "36"};
+            console.log(person);
+            document.write("(In console. Press F12)");
+
+            document.write("<br><br>7) Array: An array is a type of object used for storing multiple values in single variable. Each value (also called an element) in an array has a numeric position, known as its index, and it may contain data of any data type-numbers, strings, booleans, functions, objects, and even other arrays. The array index starts from 0, so that the first array element is arr[0] not arr[1]. <br><br>eg: ")
+
+            var colors = ["Red", "Yellow", "Green", "Orange"];
+            console.log(colors);
+            document.write("(In console. Press F12)");
+
+            document.write("<br><br>8) Function: The function is callable object that executes a block of code. Since functions are objects, so it is possible to assign them to variables. <br><br>eg: ")
+
+            var greeting = function(){ 
+                 return "Hello World!"; 
+}  
+            document.write(typeof greeting,"\n(",greeting(),")");
+
+        </script>
+
+    </body>
+
+</html>          
