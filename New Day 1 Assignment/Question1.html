@@ -1,42 +1,44 @@
 <html>
 
-<head>
-    <h1> Console functions</h1>
-</head>
+    <head>
+        <h1> Console functions</h1>
+    </head>
 
-<body>
+    <body>
 
-    <script>
-        document.write("1> console.log(): prints the data provided. Can be viewed in the console of the browser.");
-        console.log("Hello LetsUpgraders!");
+        <script>
+            document.write("1> console.log(): prints the data provided. Can be viewed in the console of the browser.");
+            console.log("Hello LetsUpgraders!");
 
-        document.write("<br>2> console.error(): gives an error message.")
-        console.error('An error example');
+            document.write("<br>2> console.error(): gives an error message.")
+            console.error('An error example');
 
-        document.write("<br>3> console.warn: gives a warning message.")
-        console.warn('A warning example');
+            document.write("<br>3> console.warn: gives a warning message.")
+            console.warn('A warning example');
 
-        document.write("<br>4> console.clear: clears the console and gives the message: Console was cleared")
-        console.clear();
+            document.write("<br>4> console.clear: clears the console and gives the message: Console was cleared")
+            console.clear();
 
-        document.write("<br>5> console.time() and console.timeEnd(): gives the time taken to execute a particular code.")
-        console.time('abc'); 
-        document.write("A console.time example")
-        console.timeEnd('abc'); 
+            document.write("<br>5> console.time() and console.timeEnd(): gives the time taken to execute a particular code.")
+            console.time('abc'); 
+            document.write("A console.time example")
+            console.timeEnd('abc'); 
 
-        document.write("<br>6> console.table: generates a table. Input must be an array or an object")
-        console.table({'a':1, 'b':2});
+            document.write("<br>6> console.table: generates a table. Input must be an array or an object")
+            console.table({'a':1, 'b':2});
 
-        document.write("<br>7> console.count: counts the number that the function hit by this counting method")
-        for(let i=0;i<5;i++){ 
-            console.count(i); 
-        }
+            document.write("<br>7> console.count: counts the number that the function hit by this counting method")
+            for(let i=0;i<5;i++){ 
+                console.count(i); 
+            }
 
-        document.write("<br>8> console.group() and console.groupEnd(): groups contents in a separate block, which will be indented") 
-        console.group('simple'); 
-        document.write("A console.group example")
-        console.groupEnd('simple');
+            document.write("<br>8> console.group() and console.groupEnd(): groups contents in a separate block, which will be indented") 
+            console.group('simple'); 
+            document.write("A console.group example")
+            console.groupEnd('simple');
 
-    </script>
-</body>
+        </script>
+
+    </body>
+    
 </html>
