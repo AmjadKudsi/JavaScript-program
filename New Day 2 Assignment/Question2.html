@@ -1,0 +1,80 @@
+<html>
+
+    <head>
+        <h1> Methods of string and array: </h1>
+    </head>
+
+    <body>
+
+        <script>
+
+        document.write("<h3>I) String methods: (Press F12 to see the outputs) </h3>");
+        
+        let str = "LetsUpgrade";
+        console.log(`The string considered here is '${str}'`)
+        
+        document.write("1) string.length");
+        console.log(str.length);
+
+        document.write("<br><br>2) string.charAt(9)");
+        console.log(str.charAt('9'));
+
+        document.write("<br><br>3) string.endsWith(grade)");
+        console.log(str.endsWith("grade"));
+
+        document.write("<br><br>4) string.split('U')");                 //Case - insensitive
+        console.log(str.split('U'));
+
+        document.write("<br><br>5) string.substring(1, 4);");
+        console.log(str.substring(0, 4));
+
+        document.write("<br><br>6) slice(4, 11)");
+        console.log(str.slice(4, 11));
+        
+        document.write("<br><br>7) slice(4, 11);");
+        console.log(str.slice(4, 11));
+
+        document.write("<br><br>8) replace('Upgrade', 'Code')");
+        console.log(str.replace('Upgrade', 'Code'));
+
+        document.write("<br><br><h3>II) Array methods: </h3>");
+        
+        let arr = ["LetsUpgrade","Javascript","Program"];
+        console.log(`The array considered here is '${arr}'`)
+
+        document.write("1) Array.isArray(arr)");
+        console.log(Array.isArray(arr));
+
+        document.write("<br><br>2) arr.indexOf('Program')");
+        console.log(arr.indexOf('Program'));
+
+        document.write("<br><br>3) arr.reversed");
+        arr.reverse();
+        console.log(arr);
+        arr.reverse();
+
+        document.write("<br><br>4) arr.concat('Youtube')");
+        console.log(arr.concat('Youtube'));
+
+        document.write("<br><br>5) arr.unshift('The')");
+        console.log(arr.unshift('The'));
+        console.log(arr)
+
+        document.write("<br><br>6) arr.shift()");
+        console.log(arr.shift());
+        console.log(arr)
+        
+        document.write("<br><br>7) arr.push('Youtube')");
+        console.log(arr.push('Youtube'));
+        console.log(arr)
+
+        document.write("<br><br>8) arr.pop()");
+        console.log(arr.pop());
+        console.log(arr)
+
+        </script>
+
+
+    </body>
+
+</html>          
