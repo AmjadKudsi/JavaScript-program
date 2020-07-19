@@ -1,0 +1,71 @@
+<html>
+
+    <head>
+        <h1> Marks and Grade  </h1>
+    </head>
+
+    <body>
+
+        <script>
+            marks = prompt("Enter your marks: ");
+            var grade = " ";
+            var grade_switch = " ";
+
+            document.write("Press F12 to see the result.")
+
+            if(marks > 74 && marks < 101){
+                grade = "A";
+                grade_ch = 1;
+            }
+
+            else if(marks > 49 && marks < 75){
+                grade = "B";
+                grade_ch = 2;
+            }
+
+            else if(marks > 34 && marks < 50){
+                grade = "C";
+                grade_ch = 3;
+            }
+
+            else if(marks > -1 && marks < 35){
+                grade = "D";
+                grade_ch = 4;
+            }
+
+            else{
+                grade = "Invalid Input";
+                grade_ch = 5;
+            }
+
+            console.log(`Marks are ${marks} and grade is ${grade} (if else output)`);
+
+            switch(grade_ch){
+                case 1:
+                    grade_switch = "A";
+                    break;
+
+                case 2:
+                    grade_switch = "B";
+                    break;
+
+                case 3:
+                    grade_switch = "C";
+                    break;
+
+                case 4:
+                    grade_switch = "D";
+                    break;
+
+                case 5:
+                    grade_switch = "Invalid Input";
+            }
+
+            console.log(`Marks are ${marks} and grade is ${grade_switch} (switch output)`);
+        
+
+        </script>
+
+    </body>
+
+</html>          
