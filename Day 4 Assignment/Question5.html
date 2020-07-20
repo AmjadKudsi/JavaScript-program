@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <h1> Shopping list</h1>
+    </head>
+
+    <body>
+        <script>
+            sales = prompt("Enter your sales status: ");
+            
+            document.write("Press F12 to see the result.")
+
+            if(sales > 0 && sales < 5001){
+                commission = sales*0.02;
+            }
+
+            else if(sales > 5000 && sales < 10001){
+                commission = 100 + (sales - 5000)*0.05;
+            }
+
+            else if(sales > 10000 && sales < 20001){
+                commission = 100 + 250 + (sales - 10000)*0.07;
+            }
+
+            else if(sales > 20000){
+                commission = 100 + 250 + 700 + (sales - 20000)*0.1;
+            }
+
+            else{
+                grade = "Invalid Input";
+            }
+
+            console.log("The commission of the employee is:", commission);
+
+
+            let com = (sales > 0 && sales < 5001)? sales*0.02 : (sales > 5000 && sales < 10001)? 100 + (sales - 5000)*0.05 :(sales > 10000 && sales < 20001)? 100 + 250 + (sales - 10000)*0.07 : (sales > 20000)? 100 + 250 + 700 + (sales - 20000)*0.1 : "Invalid Input";
+
+            console.log("The commission of the employee using ternary operators:", com);
+        </script>
+    </body>
+</html>

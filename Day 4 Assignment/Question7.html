@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <h1> List of Prime numbers</h1>
+    </head>
+
+    <body>
+        <script>
+
+            document.write("Press F12 to see the list of prime numbers");
+
+            function primeFactorsTo(max){
+                var store  = [], i, j, primes = [];
+                for (i = 2; i <= max; ++i){
+                    if (!store [i]){
+                        primes.push(i);
+                        for (j = i << 1; j <= max; j += i){
+                            store[j] = true;
+                        }
+                    }
+                }
+                return primes;
+            }
+
+            n = prompt("Enter the higher limit: ");
+            console.log(primeFactorsTo(n));
+
+        </script>
+    </body>
+</html>

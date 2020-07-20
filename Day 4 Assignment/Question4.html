@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <h1> Calculator </h1>
+    </head>
+
+    <body>
+        <script>
+
+            OS = prompt("Enter two numbers separated by ' ': ","4 2");
+
+            document.write("Press F12 to see the outputs");
+
+            const numbers = OS.split(" ");
+
+            console.log("Sum: ",Number(numbers[0]) + Number(numbers[1]));
+
+            console.log("Diff: ",Number(numbers[0]) - Number(numbers[1]));
+
+            console.log("Product: ",Number(numbers[0]) * Number(numbers[1]));
+
+            console.log("Division: ",Number(numbers[0]) / Number(numbers[1]));
+
+            console.log(`Square root of ${numbers[0]}:`,Math.sqrt(numbers[0]),`& Square root of ${numbers[1]}:`,Math.sqrt(numbers[1]))
+
+            console.log("Modulo: ",Number(numbers[0]) % Number(numbers[1]));
+
+        </script>
+    </body>
+</html>
