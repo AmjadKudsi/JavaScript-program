@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <h2> Cube of odd numbers </h2>
+    </head>
+
+    <body>
+        <script>
+            
+            document.write("Press F12 to see the output")
+            
+            num = prompt("Enter the higher limit: ");
+
+            arr = [];
+
+            for(let i=0; i<=num; i++){
+                arr.push(i);
+            }
+
+            let odd = arr.filter(el=>el%2!=0);
+            console.log("Array of odd numbers: ");
+            console.log(odd);
+
+            console.log("Array of cubes: ");
+            
+            cubes = [];
+            
+            odd.forEach(el=>{
+                cubes.push(el**3);
+            });
+
+            console.log(cubes);
+
+        </script>
+    </body>
+</html>
