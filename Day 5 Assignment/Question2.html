@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <h2> User Moderator Admin </h2>
+    </head>
+
+    <body>
+        <script>
+            
+            document.write("Press F12");
+            class User{
+                constructor(name, age, email){
+                    this.name = name;
+                    this.age = age;
+                    this.email = email;
+                    this.coins = 0;
+                    this.courses = [];
+                }
+
+                login(){
+                    console.log(`Welcome ${this.name}! You're now logged in`);
+                    console.log(this);
+                }
+
+                logout(){
+                    console.log(`${this.name} has logged out`);
+                }
+            }
+
+            class Moderator extends User{
+                addCoins(user){
+                    user.coins++;
+                    console.log(`Congrats ${user.name}! A coin has been added by ${this.name} in your account.`);
+                    console.log(user);
+                }
+            }
+
+            class Admin extends Moderator{
+                addCourse(user,course){
+                    user.courses.push(course);
+                    console.log(`A new course has been added to ${user.name}'s account by ${this.name}.`);
+                    console.log(user);
+                }
+
+                deleteCourse(user,course){
+                    console.log(`The course '${user.courses}' has been deleted from ${user.name}'s account by ${this.name}.`);
+                    
+                    user.courses = user.courses.filter(u=>{
+                        return u.course!=user.course;
+                    })
+                    console.log(user);
+                }
+
+
+            }
+
+            let user1 = new User('Rohit', '21', 'rohit@gmail.com');
+
+            user1.login();
+
+            let mod = new Moderator('Prahit', '21', 'prahit@gmail.com');
+
+            mod.login();
+
+            mod.addCoins(user1);
+
+            mod.addCoins(user1);
+
+            let admin = new Admin('Amjad', '21', 'amjadkudsi7@gmail.com');
+
+            admin.login();
+
+            admin.addCourse(user1,'JavaScript');
+
+            admin.deleteCourse(user1,'JavaScript');
+
+            mod.logout();
+
+            user1.logout();
+            
+
+        </script>
+    </body>
+</html>
