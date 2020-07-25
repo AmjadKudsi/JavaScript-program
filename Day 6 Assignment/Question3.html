@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            h1{text-align: center;}
+
+            .buttons{
+                position: absolute;
+                top: 35%;
+                left: 45%;
+            }
+
+            .clock{
+                position: absolute;
+                top: 20%;
+                left: 47%;
+            }
+
+        </style>
+        <h1><text-align: center> Clock </h1></text-align>
+    </head>
+
+    <body>
+
+        <div class="clock">
+            <h4 id="time"></h4>
+        </div>
+        
+        <div class="buttons">
+            <button id="dark">Dark Mode</button>
+            <button id="light">Light Mode</button>            
+        </div>
+
+        <script>
+            name = prompt("Enter your name: ");
+
+            document.write(`<h1> Welcome ${name}`);
+
+            const dmode = document.getElementById('dark');
+            
+            dmode.onclick = function changeColor(){
+    
+                document.body.style.backgroundColor = 'black';
+                document.body.style.color = 'white';
+            }
+
+            const lmode = document.getElementById('light');
+
+            lmode.onclick = function changeColor(){
+    
+                document.body.style.backgroundColor = 'white';
+                document.body.style.color = 'black';
+            }
+
+            const ctime = document.getElementById('time');
+            document.getElementById("dark").style.left = "700px";
+            
+
+            function clock(){
+                let date = new Date();
+                let time = date.toLocaleTimeString();
+                ctime.innerText = time;
+                time.fontsize = 30;
+            }
+
+
+            setInterval(clock,1000);
+
+        </script>
+    </body>
+</html>
