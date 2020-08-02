@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("./image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    position: absolute;
+    font-size: 55px;
+    color: gold;
+    top: 4%;
+    left: 25%;
+    padding-right: 50px;
+    padding-left: 50px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 55px black;
+}
+
+h1:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.text{
+    position: absolute;
+    top: 4%;
+    right: 20%;
+    height: 30px;
+    width: 430px;
+    margin: auto;
+    outline: orangered;
+    border-color: orangered;
+    padding: 10px;
+    padding-right: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn1{
+    position: absolute;
+    height: 30px;
+    width:30px;
+    right: 13%;
+    top: 4%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.btn1 img{
+    position: absolute;
+    height: 30px;
+    width: 34px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.btn2{
+    position: absolute;
+    right: 5%;
+    top: 4%;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.btn2 img{
+    position: absolute;
+    height: 30px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.container{
+    position: absolute;
+    height: 32pc;
+    width: 36pc;
+    margin:auto;
+    top: 20%;
+    left: 15%;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0  55px black;
+    overflow-y: scroll; 
+    overflow-x: hidden;
+}
+
+.container::-webkit-scrollbar{
+    -weblit-appearance: none;
+    appearance: none;
+}
+
+.lst{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    margin: 10px;
+    transition: 0.2s;
+    font-size: 30px;
+    color: yellow;
+    word-wrap: break-word;
+    padding: 5px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 55px black;   
+}
+
+.lst:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.clock{
+    position: absolute;
+    top: 40%;
+    right: 16%;
+    font-size: 35px;
+    padding: 5px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 55px black;
+}
+
+.clock:hover{
+    transform: scale(1.5);
+    transition: 0.2s;
+}
