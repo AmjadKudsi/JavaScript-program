@@ -85,6 +85,8 @@ button2.onclick = function(){
     window.localStorage.setItem("myList",JSON.stringify(lst))
 
     console.log(lst);
+
+    alert(`Item '${num}' deleted!`);
 }
 
 const ctime = document.getElementById('time');            
