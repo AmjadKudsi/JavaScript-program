@@ -2,6 +2,8 @@ document.getElementById("todo").focus();
 
 document.write(`<h1> My To Do List`);
 
+document.write("<h4> Amjad Ali</h4>");
+
 console.log("To Do List");
 
 window.onload = function(){

@@ -15,7 +15,7 @@ h1{
     font-size: 55px;
     color: gold;
     top: 4%;
-    left: 25%;
+    left: 19.5%;
     padding-right: 50px;
     padding-left: 50px;
     backdrop-filter: blur(5px);
@@ -23,6 +23,22 @@ h1{
 }
 
 h1:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+h4{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    bottom: 1%;
+    right: 1%;
+    padding: 3px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 55px black;
+}
+
+h4:hover{
     transform: scale(1.1);
     transition: 0.2s;
 }
